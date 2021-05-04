@@ -1,0 +1,26 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+<style>
+    .row {
+        width: 100%;
+        text-align: center;
+    }
+
+    .block {
+        width: 100px;
+        display: inline-block;
+    }​
+</style>
+
+<div class="container">
+    <div class="jumbotron">
+      <h2 style="color: black;">Math Helper</h2>      
+    </div>       
+</div>
+<div class="row">
+    <div class="block" method="GET">
+        <h4> Result: {{ data }}</h4>
+    </div>
+</div>
+{% endblock %}
